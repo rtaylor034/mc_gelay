@@ -4,7 +4,6 @@
 #--------------------
 
 #declare storage gelay:var
-#declare storage gelay:dirty
 #declare storage gelay:in
 #declare storage gelay:out
 #declare storage gelay:data
@@ -12,7 +11,6 @@
 #declare storage gelay:const
 
 scoreboard objectives add gelay_var dummy
-scoreboard objectives add gelay_dirty dummy
 scoreboard objectives add gelay_data dummy
 scoreboard objectives add gelay_const dummy
 

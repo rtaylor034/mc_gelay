@@ -5,14 +5,13 @@
 # => selector: $selector = "@s"
 # => data: obj = {}
 #--------------------
-# <- id: TaskId
+# <- task_id: TaskId
 #--------------------
 #> schedules <command> to run AS and AT <selector> in <ticks> ticks.
 #> {gelay:api -> data} will hold <data> when <command> is executed.
 #--------------------
 #- <selector> takes into account the current context, hence default "@s" value.
-#- scheduled command is stored as a Task with >task_id<.
-#- >id< is the assigned TaskId, and is used when cancelling a scheduled command.
+#- >task_id< is the assigned TaskId, and is used when cancelling a scheduled command.
 #- <ticks> cannot be zero or negative.
 #--------------------
 # 1 - success
@@ -32,8 +31,8 @@ scoreboard players operation *schedule.time gelay_var += *time gelay_data
 execute store result storage gelay:var schedule.add.time int 1 run scoreboard players get *schedule.time gelay_var
 
 scoreboard players add *current_id gelay_data 1
-execute store result storage gelay:var schedule.add.id int 1 run scoreboard players get *current_id gelay_data
-data modify storage gelay:out schedule.id set from storage gelay:var schedule.id
+execute store result storage gelay:var schedule.add.task_id int 1 run scoreboard players get *current_id gelay_data
+data modify storage gelay:out schedule.task_id set from storage gelay:var schedule.task_id
 
 function gelay:internal/api/guuid_list with storage gelay:in schedule
 
