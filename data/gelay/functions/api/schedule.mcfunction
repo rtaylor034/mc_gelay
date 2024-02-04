@@ -24,6 +24,7 @@ execute unless data storage gelay:in schedule.selector run data modify storage g
 execute unless data storage gelay:in schedule.data run data modify storage gelay:in schedule.data set value {}
 
 data modify storage gelay:var schedule.add.data set from storage gelay:in schedule.data
+data modify storage gelay:var schedule.add.command set from storage gelay:in schedule.command
 
 execute store result score *schedule.time gelay_var run data get storage gelay:in schedule.ticks
 execute if score *schedule.time gelay_var matches ..0 run return run function gelay:impl/schedule/fail
@@ -36,8 +37,12 @@ data modify storage gelay:out schedule.id set from storage gelay:var schedule.id
 
 function gelay:internal/api/guuid_list with storage gelay:in schedule
 
+function gelay:impl/schedule/schedule with storage gelay:in schedule
+
 execute if data storage gelay:out guuid_list.result[] run function gelay:impl/schedule/each_target
 
 scoreboard players reset *schedule.time gelay_var
 data remove storage gelay:in schedule
 data remove storage gelay:var schedule
+
+return 1
