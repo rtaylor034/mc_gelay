@@ -10,4 +10,5 @@ function gelay:internal/schedule/check.1 with storage gelay:var check
 
 execute if data storage gelay:var check.jobs[] run function gelay:internal/schedule/run with storage gelay:var check.jobs[0]
 
+data remove storage gelay:api data
 data remove storage gelay:var check

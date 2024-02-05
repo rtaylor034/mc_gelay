@@ -4,7 +4,6 @@
 #--------------------
 
 data modify storage gelay:api data set from storage gelay:var check.jobs[0].data
-
 $execute as $(target) at @s run $(command)
 
 data remove storage gelay:var check.jobs[0]
