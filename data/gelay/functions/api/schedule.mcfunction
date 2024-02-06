@@ -5,13 +5,13 @@
 # => selector: $selector = "@s"
 # => data: obj = {}
 #--------------------
-# <- task_id: TaskId
+# <- result: TaskId
 #--------------------
 #> schedules <command> to run AS and AT <selector> in <ticks> ticks.
 #> {gelay:api -> data} will hold <data> when <command> is executed.
 #--------------------
 #- <selector> takes into account the current context, hence default "@s" value.
-#- >task_id< is the assigned TaskId, and is used when cancelling a scheduled command.
+#- >result< is the assigned TaskId, and is used when cancelling a scheduled command.
 #- <ticks> cannot be zero or negative.
 #--------------------
 # 1 - success
