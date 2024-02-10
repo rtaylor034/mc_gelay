@@ -32,7 +32,7 @@ execute store result storage gelay:var schedule.add.time int 1 run scoreboard pl
 
 scoreboard players add *current_id gelay_data 1
 execute store result storage gelay:var schedule.add.task_id int 1 run scoreboard players get *current_id gelay_data
-data modify storage gelay:out schedule.task_id set from storage gelay:var schedule.task_id
+data modify storage gelay:out schedule.result set from storage gelay:var schedule.task_id
 
 function gelay:internal/api/guuid_list with storage gelay:in schedule
 
