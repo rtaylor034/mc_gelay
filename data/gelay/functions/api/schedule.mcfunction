@@ -18,7 +18,6 @@
 # 0 - failure, <ticks> zero or negative.
 #--------------------
 
-$data modify storage gelay:in schedule set value $(in)
 execute unless data storage gelay:in schedule.selector run data modify storage gelay:in schedule.selector set value "@s"
 execute unless data storage gelay:in schedule.data run data modify storage gelay:in schedule.data set value {}
 
