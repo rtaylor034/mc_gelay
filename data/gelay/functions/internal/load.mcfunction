@@ -10,6 +10,8 @@
 #declare storage gelay:api
 #declare storage gelay:const
 
+scoreboard players set *gelay load.status 1
+
 scoreboard objectives add gelay_var dummy
 scoreboard objectives add gelay_data dummy
 scoreboard objectives add gelay_const dummy
