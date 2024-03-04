@@ -4,7 +4,7 @@
 #--------------------
 # ...
 #--------------------
-#> cancels a task with <task_id> if it exists..
+#> cancels a task with <task_id> if it exists.
 #--------------------
 # ...
 #--------------------

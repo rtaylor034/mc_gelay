@@ -3,7 +3,9 @@
 # impl/schedule/add
 #--------------------
 
+scoreboard players add *time gelay_data 1
 execute store result storage gelay:var check.time int 1 run scoreboard players get *time gelay_data
+scoreboard players remove *time gelay_data 1
 
 data modify storage gelay:var check.jobs set value []
 function gelay:internal/schedule/check.1 with storage gelay:var check
