@@ -34,6 +34,6 @@ execute store result score *guuid.3 gelay_var run scoreboard players operation *
 execute store result storage gelay:var guuid.e int 1 run scoreboard players operation *guuid.2 gelay_var %= *256 gelay_const
 execute store result storage gelay:var guuid.f int 1 run scoreboard players operation *guuid.3 gelay_var /= *256 gelay_const
 
-function gelay:internal/impl/guuid/get_hexes with storage gelay:var guuid
-function gelay:internal/impl/guuid/concat_uuid with storage gelay:var guuid
+function gelay:_/_impl/guuid/get_hexes with storage gelay:var guuid
+function gelay:_/_impl/guuid/concat_uuid with storage gelay:var guuid
 

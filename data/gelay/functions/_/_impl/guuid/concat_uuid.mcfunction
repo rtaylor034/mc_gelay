@@ -1,4 +1,4 @@
-#> gelay:internal/impl/guuid/concat_uuid
+#> gelay:_/_impl/guuid/concat_uuid
 #--------------------
 # @api
 #--------------------

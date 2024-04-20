@@ -1,4 +1,4 @@
-#> gelay:internal/impl/guuid/get_hexes
+#> gelay:_/_impl/guuid/get_hexes
 #--------------------
 # @api
 #--------------------

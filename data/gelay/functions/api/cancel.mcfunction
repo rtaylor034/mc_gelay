@@ -12,4 +12,4 @@
 # 0 - no task with <task_id> exists (likely was already executed).
 #--------------------
 
-return run function gelay:impl/cancel/do with storage gelay:in cancel
+return run function gelay:_/impl/cancel/do with storage gelay:in cancel

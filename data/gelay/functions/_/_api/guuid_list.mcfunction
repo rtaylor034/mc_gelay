@@ -1,4 +1,4 @@
-#> gelay:internal/api > guuid_list
+#> gelay:_/_api > guuid_list
 #--------------------
 # DIRECT -> selector: $selector
 #--------------------
@@ -14,7 +14,7 @@
 #--------------------
 
 data modify storage gelay:out guuid_list.result set value []
-$execute as $(selector) run function gelay:internal/impl/guuid/guuid
+$execute as $(selector) run function gelay:_/_impl/guuid/guuid
 
 scoreboard players reset *guuid.0 gelay_var
 scoreboard players reset *guuid.1 gelay_var
